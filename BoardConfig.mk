@@ -14,24 +14,20 @@
 # limitations under the License.
 #
 
-# Inherit from oneplus sm8350-common
--include device/oneplus/sm8350-common/BoardConfigCommon.mk
+# Inherit from sony sm8350-common
+-include device/sony/sm8350-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/lemonade
+DEVICE_PATH := device/sony/pdx215
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 420
 
-# Fingerprint
-SOONG_CONFIG_ONEPLUS_FOD_POS_X = 453
-SOONG_CONFIG_ONEPLUS_FOD_POS_Y = 2120
-SOONG_CONFIG_ONEPLUS_FOD_SIZE = 174
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
--include vendor/oneplus/lemonade/BoardConfigVendor.mk
+-include vendor/sony/pdx215/BoardConfigVendor.mk

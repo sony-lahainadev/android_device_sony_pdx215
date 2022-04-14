@@ -18,23 +18,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from lemonade device
-$(call inherit-product, device/oneplus/lemonade/device.mk)
+# Inherit from pdx215 device
+$(call inherit-product, device/sony/pdx215/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonade
-PRODUCT_DEVICE := lemonade
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := LE2113
+PRODUCT_NAME := lineage_pdx215
+PRODUCT_DEVICE := pdx215
+PRODUCT_MANUFACTURER := Sony
+PRODUCT_BRAND := Sony
+PRODUCT_MODEL := XQ-BC72
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus9 \
-    PRODUCT_NAME=OnePlus9_EEA \
-    PRIVATE_BUILD_DESC="OnePlus9-user 11   release-keys"
+    PRODUCT_DEVICE=pdx215 \
+    PRODUCT_NAME=pdx215 \
+    PRIVATE_BUILD_DESC="pdx215-user 11   release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus9_EEA/OnePlus9:11/RKQ1.201105.002/2111112053:user/release-keys
+BUILD_FINGERPRINT := Sony/pdx215/pdx215:11/RKQ1.210107.001/1:user/release-keys

@@ -35,8 +35,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1096
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -44,8 +44,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Inherit from oneplus sm8350-common
-$(call inherit-product, device/oneplus/sm8350-common/common.mk)
+# Inherit from sony sm8350-common
+$(call inherit-product, device/sony/sm8350-common/common.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/oneplus/lemonade/lemonade-vendor.mk)
+$(call inherit-product, vendor/sony/pdx215/pdx215-vendor.mk)
