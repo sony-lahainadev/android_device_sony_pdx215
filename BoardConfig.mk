@@ -19,12 +19,14 @@
 
 DEVICE_PATH := device/sony/pdx215
 
+# Header
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Display
 TARGET_SCREEN_DENSITY := 420
-
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
